@@ -9,7 +9,7 @@ const app = express();
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
-app.use(express.urlencoded())
+app.use(express.urlencoded());
 app.use(routes);
 
 app.listen(process.env.PORT, () => console.log("Server Running"));
