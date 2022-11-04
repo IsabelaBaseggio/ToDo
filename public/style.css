@@ -3,52 +3,131 @@
 * {
   margin: 0;
   padding: 0;
-  font: "Montserrat", Arial;
+  font-family: "Montserrat", Arial;
 }
 
 body {
-    background-color: #f8f7f9;
-    width: 100%;
-    height: 100%;
-    color: #000;
+  background-color: #d1d5ff;
+  width: 100%;
+  height: 100%;
+  color: #000;
 }
 
 header {
-    background-color: #858FFF;
-    padding: 3rem;
-    margin: .5rem;
-    text-align: center;
+  background-color: #858fff;
+  padding: 3rem;
+  margin: 0.5rem;
+  text-align: center;
 }
 
 header h1 {
-    padding-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
-form{
-    display: flex;
-    flex-wrap: nowrap;
+form {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 input {
-    margin: 0;
-    border: none;
-    border-radius: 0;
-    width: 75%;
-    padding: .6rem;
-    font-size: 1rem;
-    outline: none;
-    background-color: #D1D5FF;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  outline: none;
+  background-color: #d1d5ff;
+}
+
+input:-webkit-autofill {
+  box-shadow: 0 0 0 1000px #d1d5ff inset !important;
+  color: #000 !important;
 }
 
 button {
-    padding: .6rem;
-    width: 25%;
-    background-color: #D1D5FF;
+  padding: 0.6rem;
+  width: 25%;
+  background-color: #d1d5ff;
+  color: #000;
+  text-align: center;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #74b354;
+  border-radius: 0 50px 50px 0;
+}
+
+section#tasks {
+   margin: .5rem; 
+}
+
+ul{
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+    padding: .5rem;
+    background-color: #858fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+}
+
+ul li a {
+    text-decoration: none;
     color: #000;
-    text-align: center;
-    font-size: 1.2rem;
-    outline: none;
-    cursor: pointer;
-    border-radius: 0;
-    border: none;
+}
+
+ul li span {
+    color: #282B4D;
+    font-style: italic;
+    font-size: .8rem;
+    padding-left: 1rem;
+}
+
+ul li div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul li:nth-child(odd){
+    background-color: #d1d5ff;
+}
+
+ul li:hover{
+    background-color: #A7AACC;
+}
+
+a.btnUpdate {
+    padding: .5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+a.btnUpdate:hover{
+    background: #FFDF6B;
+}
+
+a.btnDelete{
+    padding: .5rem;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+a.btnDelete:hover{
+    background: #FF9E9E;
 }
