@@ -43,9 +43,7 @@
         <% tasksList.forEach((task) => { %>
         <li>
           <div>
-            <a href="">
-              <%= task.task %> 
-            </a>
+            <a href=""> <%= task.task %> </a>
             <span>Criado em <%= task.date.toLocaleDateString('pt-BR') %></span>
           </div>
 
@@ -65,12 +63,16 @@
     <% if (taskDelete != null) { %>
     <section id="modal">
       <div id="card">
-        <a href="/">x</a>
-        <h2>Confirmação</h2>
+        <div id="head">
+          <h2>Confirmação</h2>
+          <a id="close" href="/"><i class="material-icons">close</i></a>
+        </div>
         <hr />
         <p>Deseja realmente apagar a tarefa: <%= taskDelete.task %></p>
-        <a href="/">Não</a>
-        <a href="/deleteOne/<%= taskDelete._id%>">Sim</a>
+        <div id="btns">
+          <a id="btnNot" href="/">Não</a>
+          <a id="btnYes" href="/deleteOne/<%= taskDelete._id%>">Sim</a>
+        </div>
       </div>
     </section>
     <% } %>
