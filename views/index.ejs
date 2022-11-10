@@ -12,6 +12,14 @@
     <title>To do List</title>
   </head>
   <body>
+
+    <% if(message != "") { %>
+    <section class="message message-<%= type %>">
+      <p><%= message %></p>
+      <span id="close-message"><i class="material-icons">close</i></span>
+    </section>
+    <% } %>
+
     <header>
       <% if (task == null) { %>
       <h1>TO DO LIST</h1>
