@@ -12,27 +12,39 @@
     <title>To do List</title>
   </head>
   <body>
-
-    <% if(message != "") { %>
-      <%- include('./components/message', {type: type, message: message}) %>
-    <% } %>
+    <% if(message != "") { %> <%- include('./components/message', {type: type,
+    message: message}) %> <% } %>
 
     <header>
-      <% if (task == null) { %>
-        <%- include('./components/form', {
-          titleForm: "TO DO LIST", 
-          action: "/create",
-          value: "", 
-          idBtn: "addButon", 
-          nameBtn: "Adicionar"}) %>
-      <% } else { %>
-        <%- include('./components/form', {
-          titleForm: "EDITAR TAREFA", 
-          action: `/updateOne/${task._id}`,
-          value: task.task, 
-          idBtn: "updateButton", 
-          nameBtn: "Atualizar"}) %>
-      <% } %>
+      <div id="about">
+        <!-- <div id="about-off">
+        <i class="material-icons">keyboard_arrow_down</i>
+      </div> -->
+        <div id="about-active">
+          <i class="material-icons aboutClose">keyboard_arrow_up</i>
+          <h4 id="author">
+            Feito por<br /><span>Isabela Ribeiro Baséggio</span>
+          </h4>
+          <hr />
+          <a href="" id="github">
+            <img class="imgs" src="../public/images/github.svg" />
+            <br />
+            / IsabelaRibeiroBaseggio </a
+          ><br />
+          <a href="" id="linkedin"
+            ><img
+              src="../public/assets/linkedin.svg"
+              alt="linkedin icon link"
+            /><br />/ IsabelaRibeiroBaseggio</a
+          >
+        </div>
+      </div>
+
+      <% if (task == null) { %> <%- include('./components/form', { titleForm:
+      "TO DO LIST", action: "/create", value: "", idBtn: "addButon", nameBtn:
+      "Adicionar"}) %> <% } else { %> <%- include('./components/form', {
+      titleForm: "EDITAR TAREFA", action: `/updateOne/${task._id}`, value:
+      task.task, idBtn: "updateButton", nameBtn: "Atualizar"}) %> <% } %>
     </header>
 
     <section id="tasks">
@@ -40,7 +52,9 @@
         <% tasksList.forEach((task) => { %>
         <li class="check-<%= task.check %>">
           <div>
-            <a href="/check/<%= task._id %>" class="check-<%= task.check %>"> <%= task.task %> </a>
+            <a href="/check/<%= task._id %>" class="check-<%= task.check %>">
+              <%= task.task %>
+            </a>
             <span>Criado em <%= task.date.toLocaleDateString('pt-BR') %></span>
           </div>
 
@@ -57,9 +71,8 @@
       </ul>
     </section>
 
-    <% if (taskDelete != null) { %>
-      <%- include('./components/modalDel', {task: taskDelete}) %>
-    <% } %>
+    <% if (taskDelete != null) { %> <%- include('./components/modalDel', {task:
+    taskDelete}) %> <% } %>
 
     <script src="script.js"></script>
   </body>

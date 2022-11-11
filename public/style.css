@@ -20,6 +20,72 @@ header {
   text-align: center;
 }
 
+header div#about {
+  position: absolute;
+  top: 0.5rem;
+  right: 3.5rem;
+  z-index: 9999;
+}
+
+div#about div#about-off{
+  width: 50px;
+  height: 50px;
+  background-color: #00000080;
+  color: #a7aacc;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+div#about div#about-off:hover{
+  border-radius: 0 0 50px 50px;
+}
+
+div#about-off i{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div#about div#about-active{
+  padding: 1rem;
+  background-color: #00000080;
+  color: #a7aacc;
+  border-radius: 0 0 50px 50px;
+}
+
+div#about-active i{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+div#about-active i:hover{
+  color: #fff;
+}
+
+div#about-active h4#author{
+  font-size: 1.3rem;
+}
+
+h4#author span{
+  color: #fff;
+}
+
+div#about-active hr {
+  width: 90%;
+  margin: 10px auto;
+  border-color: #a7aacc;
+}
+
+div#about-active a{
+  text-decoration: none;
+  color: #fff;
+}
+
+a img.imgs{
+  width: 50px;
+  height: 50px;
+}
+
 header h1 {
   padding-bottom: 3rem;
 }
