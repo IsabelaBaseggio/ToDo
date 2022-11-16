@@ -12,5 +12,6 @@ setTimeout(() => {
 }, 5000);
 
 aboutClose.addEventListener("click", () => {
-
+  about.classList.toggle("about-off");
+  about.classList.toggle("about-active");
 })
