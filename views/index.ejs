@@ -17,26 +17,17 @@
 
     <header>
       <div id="about">
-        <div id="about-off">
-        <i class="material-icons">keyboard_arrow_down</i>
-      </div>
-        <div id="about-active">
-          <i class="material-icons aboutClose">keyboard_arrow_up</i>
-          <h4 id="author">
-            Feito por<br /><span>Isabela Ribeiro Baséggio</span>
-          </h4>
+        <div class="arrow">
+          <div class="arrowMood"></div>
+        </div>
+        <div class="contacts">
+          <h4>Feito por <br><span>Isabela Baséggio</span></h4>
           <hr />
-          <a href="" id="github">
-            <img class="imgs" src="../public/images/github.svg" />
-            <br />
-            / IsabelaRibeiroBaseggio </a
-          ><br />
-          <a href="" id="linkedin"
-            ><img
-              src="../public/assets/linkedin.svg"
-              alt="linkedin icon link"
-            /><br />/ IsabelaRibeiroBaseggio</a
-          >
+          <ul id="links">
+            <li><a href="https://github.com/IsabelaBaseggio" id="github" alt="github"> /IsabelaBaseggio </a></li>
+            <li><a href="https://www.linkedin.com/in/isabelabaseggio/" id="linkedin" alt="linkedin"> /isabelabaseggio </a>
+            </div></li></ul>
+
         </div>
       </div>
 
@@ -48,11 +39,11 @@
     </header>
 
     <section id="tasks">
-      <ul>
+      <ul id="taskList">
         <% tasksList.forEach((task) => { %>
         <li class="check-<%= task.check %>">
           <div>
-            <a href="/check/<%= task._id %>" class="check-<%= task.check %>">
+            <a href="/check/<%= task._id %>" class="check-<%= task.check %>" id="taskLink">
               <%= task.task %>
             </a>
             <span>Criado em <%= task.date.toLocaleDateString('pt-BR') %></span>

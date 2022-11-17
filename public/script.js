@@ -1,17 +1,30 @@
 const closeMessage = document.querySelector("#close-message");
 const message = document.querySelector(".message");
 const about = document.querySelector("#about");
-const aboutClose = document.querySelector("#about-close");
+const arrow = document.querySelector(".arrow");
+const arrowMood = document.querySelector(".arrowMood");
+const contacts = document.querySelector(".contacts");
 
-closeMessage.addEventListener("click", () => {
-  message.style.display = "none";
-});
-
-setTimeout(() => {
+if (closeMessage) {
+  closeMessage.addEventListener("click", () => {
     message.style.display = "none";
-}, 5000);
+  });
 
-aboutClose.addEventListener("click", () => {
-  about.classList.toggle("about-off");
-  about.classList.toggle("about-active");
-})
+  setTimeout(() => {
+    message.style.display = "none";
+  }, 5000);
+}
+
+console.log(about)
+console.log(arrow)
+console.log(arrowMood)
+console.log(contacts)
+
+if (arrow) {
+  arrow.addEventListener("click", () => {
+    about.classList.toggle("active");
+    arrow.classList.toggle("active");
+    arrowMood.classList.toggle("active");
+    contacts.classList.toggle("active");
+  });
+}

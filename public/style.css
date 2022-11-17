@@ -14,76 +14,140 @@ body {
 }
 
 header {
+  position: relative;
   background-color: #858fff;
   padding: 3rem;
   margin: 0.5rem;
   text-align: center;
 }
 
-header div#about {
+header div#about{
   position: absolute;
-  top: 0.5rem;
-  right: 3.5rem;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+}
+
+div#about div.arrow{
+  background-color: #000000d0;
+  cursor: pointer;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+
+div#about div.arrow:hover{
+  border-radius: 0 0 0 30px;
+}
+
+div.arrow div.arrowMood{
+  position: absolute;
+  border: #fff solid;
+  top: 12px;
+  left: 17px;
+  width: 15px;
+  height: 15px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  transition: all 0.4s ease-in-out;
+}
+
+div#about div.contacts{
+  display: none;
+}
+
+header div#about.active{
+  position: absolute;
+  padding-bottom: 10px;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: auto;
+  background-color: #000000d0;
+  border-radius: 0 0 0 50px;
   z-index: 9999;
 }
 
-div#about div#about-off{
+div#about div.arrow.active{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
   width: 50px;
   height: 50px;
-  background-color: #00000080;
-  color: #a7aacc;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  background-color: #00000000;
 }
 
-div#about div#about-off:hover{
-  border-radius: 0 0 50px 50px;
+div.arrow div.arrowMood.active{
+  position: absolute;
+  border: #a7aacc solid;
+  top: 24px;
+  width: 15px;
+  height: 15px;
+  border-width: 0 2px 2px 0;
+  transform: rotate(-135deg);
+  transition: all 0.4s ease-in-out;
 }
 
-div#about-off i{
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+div.arrow div.arrowMood.active:hover{
+  border-color: #fff;
 }
 
-div#about div#about-active{
-  padding: 1rem;
-  background-color: #00000080;
-  color: #a7aacc;
-  border-radius: 0 0 50px 50px;
-}
-
-div#about-active i{
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-div#about-active i:hover{
-  color: #fff;
-}
-
-div#about-active h4#author{
-  font-size: 1.3rem;
-}
-
-h4#author span{
-  color: #fff;
-}
-
-div#about-active hr {
+div#about div.contacts.active{
+  display: block;
+  margin: 50px auto 0 auto;
   width: 90%;
-  margin: 10px auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+div.contacts.active h4{
+  color: #a7aacc;
+  padding: 10px;
+}
+
+div.contacts.active h4 span{
+  color: #fff;
+}
+
+div.contacts.active hr{
+  width: 90%;
+  margin: 0 auto;
   border-color: #a7aacc;
 }
 
-div#about-active a{
+div.contacts.active ul#links{
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+ul#links li{
+  padding: 10px;
+}
+
+ul#links li a{
   text-decoration: none;
   color: #fff;
 }
 
-a img.imgs{
-  width: 50px;
-  height: 50px;
+ul#links li a#github::before{
+  content: url("./images/github.svg");
+  margin: auto;
+  padding: 10px;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+ul#links li a#linkedin::before{
+  content: url("./images/linkedin.svg");
+  margin: auto;
+  display: block;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 header h1 {
@@ -134,11 +198,11 @@ section#tasks {
   margin: 0.5rem;
 }
 
-ul {
+ul#taskList {
   list-style: none;
 }
 
-ul li {
+ul#taskList li {
   position: relative;
   padding: 0.5rem;
   background-color: #858fff;
@@ -150,34 +214,36 @@ ul li {
   font-size: 1.3rem;
 }
 
-ul li a {
+ul#taskList li a#taskLink{
   text-decoration: none;
   color: #000;
-  padding-left: 2rem;
+  text-align: center;
+  margin-left: 2rem;
 }
 
-ul li span {
+ul#taskList li span {
   color: #282b4d;
   font-style: italic;
   font-size: 0.8rem;
   padding-left: 1rem;
 }
 
-ul li div {
+ul#taskList li div {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
 
-ul li:nth-child(odd) {
+ul#taskList li:nth-child(odd) {
   background-color: #d1d5ff;
 }
 
-ul li:hover {
+ul#taskList li:hover {
   background-color: #a7aacc;
 }
 
 a.btnUpdate {
+  color: #000;
   padding: 0.5rem;
   text-decoration: none;
   border-radius: 50%;
@@ -189,6 +255,7 @@ a.btnUpdate:hover {
 }
 
 a.btnDelete {
+  color: #000;
   padding: 0.5rem;
   text-decoration: none;
   border-radius: 50%;
@@ -342,7 +409,7 @@ span#close-message:hover{
   color: #d16066;
 }
 
-ul li.check-true{
+ul#taskList li.check-true{
   background-color: #a7aacc;
   text-decoration: line-through;
 }
