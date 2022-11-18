@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", Arial;
 }
 
@@ -27,6 +28,7 @@ header div#about{
   right: 0;
   width: 50px;
   height: 50px;
+  transition: all 0.3s ease-in-out;
 }
 
 div#about div.arrow{
@@ -46,12 +48,12 @@ div#about div.arrow:hover{
 div.arrow div.arrowMood{
   position: absolute;
   border: #fff solid;
-  top: 12px;
-  left: 17px;
+  top: 17px;
+  left: 21px;
   width: 15px;
   height: 15px;
   border-width: 0 2px 2px 0;
-  transform: rotate(45deg);
+  transform: rotate(135deg);
   transition: all 0.4s ease-in-out;
 }
 
@@ -69,11 +71,11 @@ header div#about.active{
   background-color: #000000d0;
   border-radius: 0 0 0 50px;
   z-index: 9999;
+  transition: all 0.3s ease;
 }
 
 div#about div.arrow.active{
   position: absolute;
-  right: 0;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -87,7 +89,7 @@ div.arrow div.arrowMood.active{
   width: 15px;
   height: 15px;
   border-width: 0 2px 2px 0;
-  transform: rotate(-135deg);
+  transform: rotate(-45deg);
   transition: all 0.4s ease-in-out;
 }
 
@@ -435,4 +437,37 @@ ul li a.check-false::before{
   height: 13px;
   width: 13px;
   border-width: 2px;
+}
+
+@media (max-width: 699px){
+  form {
+    flex-wrap: wrap;
+  }
+
+  input {
+    width: 100%;
+  }
+  
+  input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #d1d5ff inset !important;
+    color: #000 !important;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #74b354;
+    border-radius: 0 0 25px 25px;
+  }
+
+  ul#taskList li div {
+    margin: auto;
+  }
+
+  ul li a.check-true::before{
+    top: 11px;
+  }
+  
+  ul li a.check-false::before{
+    top: 12px;
+  }
 }

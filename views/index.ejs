@@ -12,30 +12,20 @@
     <title>To do List</title>
   </head>
   <body>
-    <% if(message != "") { %> <%- include('./components/message', {type: type,
-    message: message}) %> <% } %>
+    <% if(message != "") { %> 
+      <%- include('./components/message', {type: type,
+    message: message}) %> 
+    <% } %>
 
     <header>
-      <div id="about">
-        <div class="arrow">
-          <div class="arrowMood"></div>
-        </div>
-        <div class="contacts">
-          <h4>Feito por <br><span>Isabela Baséggio</span></h4>
-          <hr />
-          <ul id="links">
-            <li><a href="https://github.com/IsabelaBaseggio" id="github" alt="github"> /IsabelaBaseggio </a></li>
-            <li><a href="https://www.linkedin.com/in/isabelabaseggio/" id="linkedin" alt="linkedin"> /isabelabaseggio </a>
-            </div></li></ul>
-
-        </div>
-      </div>
-
-      <% if (task == null) { %> <%- include('./components/form', { titleForm:
-      "TO DO LIST", action: "/create", value: "", idBtn: "addButon", nameBtn:
-      "Adicionar"}) %> <% } else { %> <%- include('./components/form', {
-      titleForm: "EDITAR TAREFA", action: `/updateOne/${task._id}`, value:
-      task.task, idBtn: "updateButton", nameBtn: "Atualizar"}) %> <% } %>
+      <%- include('./components/aboutAuthor') %> <% if (task == null) { %> 
+        
+      <%- include('./components/form', { titleForm: "TO DO LIST", action: "/create",
+      value: "", idBtn: "addButon", nameBtn: "Adicionar"}) %> <% } else { %>
+      <%- include('./components/form', { titleForm: "EDITAR TAREFA", action:
+      `/updateOne/${task._id}`, value: task.task, idBtn: "updateButton",
+      nameBtn: "Atualizar"}) %> 
+      <% } %>
     </header>
 
     <section id="tasks">
@@ -43,7 +33,11 @@
         <% tasksList.forEach((task) => { %>
         <li class="check-<%= task.check %>">
           <div>
-            <a href="/check/<%= task._id %>" class="check-<%= task.check %>" id="taskLink">
+            <a
+              href="/check/<%= task._id %>"
+              class="check-<%= task.check %>"
+              id="taskLink"
+            >
               <%= task.task %>
             </a>
             <span>Criado em <%= task.date.toLocaleDateString('pt-BR') %></span>
