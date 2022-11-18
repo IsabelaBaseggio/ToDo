@@ -15,11 +15,6 @@ if (closeMessage) {
   }, 5000);
 }
 
-console.log(about)
-console.log(arrow)
-console.log(arrowMood)
-console.log(contacts)
-
 if (arrow) {
   arrow.addEventListener("click", () => {
     about.classList.toggle("active");
