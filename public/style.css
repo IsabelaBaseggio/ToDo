@@ -22,7 +22,7 @@ header {
   text-align: center;
 }
 
-header div#about{
+header div#about {
   position: absolute;
   top: 0;
   right: 0;
@@ -31,7 +31,7 @@ header div#about{
   transition: all 0.3s ease-in-out;
 }
 
-div#about div.arrow{
+div#about div.arrow {
   background-color: #000000d0;
   cursor: pointer;
   position: absolute;
@@ -40,12 +40,11 @@ div#about div.arrow{
   transition: all 0.3s ease-in-out;
 }
 
-
-div#about div.arrow:hover{
+div#about div.arrow:hover {
   border-radius: 0 0 0 30px;
 }
 
-div.arrow div.arrowMood{
+div.arrow div.arrowMood {
   position: absolute;
   border: #fff solid;
   top: 17px;
@@ -57,11 +56,11 @@ div.arrow div.arrowMood{
   transition: all 0.4s ease-in-out;
 }
 
-div#about div.contacts{
+div#about div.contacts {
   display: none;
 }
 
-header div#about.active{
+header div#about.active {
   position: absolute;
   padding-bottom: 10px;
   top: 0;
@@ -74,7 +73,7 @@ header div#about.active{
   transition: all 0.3s ease;
 }
 
-div#about div.arrow.active{
+div#about div.arrow.active {
   position: absolute;
   cursor: pointer;
   width: 50px;
@@ -82,7 +81,7 @@ div#about div.arrow.active{
   background-color: #00000000;
 }
 
-div.arrow div.arrowMood.active{
+div.arrow div.arrowMood.active {
   position: absolute;
   border: #a7aacc solid;
   top: 24px;
@@ -93,11 +92,11 @@ div.arrow div.arrowMood.active{
   transition: all 0.4s ease-in-out;
 }
 
-div.arrow div.arrowMood.active:hover{
+div.arrow div.arrowMood.active:hover {
   border-color: #fff;
 }
 
-div#about div.contacts.active{
+div#about div.contacts.active {
   display: block;
   margin: 50px auto 0 auto;
   width: 90%;
@@ -105,36 +104,36 @@ div#about div.contacts.active{
   font-size: 1.2rem;
 }
 
-div.contacts.active h4{
+div.contacts.active h4 {
   color: #a7aacc;
   padding: 10px;
 }
 
-div.contacts.active h4 span{
+div.contacts.active h4 span {
   color: #fff;
 }
 
-div.contacts.active hr{
+div.contacts.active hr {
   width: 90%;
   margin: 0 auto;
   border-color: #a7aacc;
 }
 
-div.contacts.active ul#links{
+div.contacts.active ul#links {
   list-style-type: none;
   margin-top: 10px;
 }
 
-ul#links li{
+ul#links li {
   padding: 10px;
 }
 
-ul#links li a{
+ul#links li a {
   text-decoration: none;
   color: #fff;
 }
 
-ul#links li a#github::before{
+ul#links li a#github::before {
   content: url("./images/github.svg");
   margin: auto;
   padding: 10px;
@@ -143,7 +142,7 @@ ul#links li a#github::before{
   height: 30px;
 }
 
-ul#links li a#linkedin::before{
+ul#links li a#linkedin::before {
   content: url("./images/linkedin.svg");
   margin: auto;
   display: block;
@@ -216,7 +215,7 @@ ul#taskList li {
   font-size: 1.3rem;
 }
 
-ul#taskList li a#taskLink{
+ul#taskList li a#taskLink {
   text-decoration: none;
   color: #000;
   text-align: center;
@@ -283,7 +282,7 @@ section#modal {
 }
 
 div#card {
-  width: 30rem;
+  max-width: 30rem;
   position: relative;
   background-color: #3f3f4d;
 }
@@ -349,27 +348,26 @@ div#btns a {
   font-size: 1.5rem;
 }
 
-
-div#btns a#btnNot{
+div#btns a#btnNot {
   color: #ff000d;
   border: solid 1px #ff000d;
   margin-right: 1rem;
   transition: all 0.3s ease-in-out;
 }
 
-div#btns a#btnNot:hover{
+div#btns a#btnNot:hover {
   background-color: #ff000d;
   color: #fff;
   border-radius: 50px;
 }
 
-div#btns a#btnYes{
+div#btns a#btnYes {
   color: #55ff00;
   border: solid 1px #55ff00;
   transition: all 0.3s ease-in-out;
 }
 
-div#btns a#btnYes:hover{
+div#btns a#btnYes:hover {
   background-color: #55ff00;
   color: #fff;
   border-radius: 50px;
@@ -390,37 +388,37 @@ div#btns a#btnYes:hover{
   justify-content: space-between;
 }
 
-.message-danger{
+.message-danger {
   background-color: #ff9e9e;
   color: #ff000d;
 }
 
-.message-success{
+.message-success {
   background-color: #74b354;
   color: #1c4209;
 }
 
-span#close-message{
+span#close-message {
   font-size: 2rem;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   padding-left: 2rem;
 }
 
-span#close-message:hover{
+span#close-message:hover {
   color: #d16066;
 }
 
-ul#taskList li.check-true{
+ul#taskList li.check-true {
   background-color: #a7aacc;
   text-decoration: line-through;
 }
 
-ul li a.check-true::before{
+ul li a.check-true::before {
   content: "";
   position: absolute;
   border: #000 solid;
-  top: 19px;
+  vertical-align: middle;
   left: 16px;
   height: 15px;
   width: 7px;
@@ -428,18 +426,23 @@ ul li a.check-true::before{
   transform: rotate(45deg);
 }
 
-ul li a.check-false::before{
+ul li a.check-false::before {
   content: "";
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   border: #000 solid;
-  top: 22px;
   left: 16px;
   height: 13px;
   width: 13px;
   border-width: 2px;
 }
 
-@media (max-width: 699px){
+@media (max-width: 699px) {
+  div#about div.arrow {
+    border-radius: 0 0 0 30px;
+  }
+
   form {
     flex-wrap: wrap;
   }
@@ -447,15 +450,19 @@ ul li a.check-false::before{
   input {
     width: 100%;
   }
-  
+
   input:-webkit-autofill {
     box-shadow: 0 0 0 1000px #d1d5ff inset !important;
     color: #000 !important;
   }
-  
+
   button {
     width: 100%;
     background-color: #74b354;
+    border-radius: 0 0 25px 25px;
+  }
+
+  button:hover{
     border-radius: 0 0 25px 25px;
   }
 
@@ -463,11 +470,4 @@ ul li a.check-false::before{
     margin: auto;
   }
 
-  ul li a.check-true::before{
-    top: 11px;
-  }
-  
-  ul li a.check-false::before{
-    top: 12px;
-  }
 }
