@@ -33,6 +33,8 @@ const createTask = async (req, res) => {
       await Task.create(task);
       message = "Tarefa criada com sucesso!";
       type = "success";
+
+      
       return res.redirect("/");
     } catch (err) {
       res.status(500).send({ error: err.message });
