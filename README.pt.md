@@ -1,4 +1,4 @@
-#To Do List
+# To Do List
 
 [README(english)](https://github.com/IsabelaBaseggio/roses_and_more/blob/main/README.md)
 
@@ -14,6 +14,17 @@ https://login-nodejs-express-jwt-production.up.railway.app/
 To Do List é um software criado com o objetivo de praticar o padrão de projeto MVC, CRUD, persistência de dados no banco de dados relacional, estilização interativa e layout responsivo.
 
 O software consiste em uma lista de tarefas, com a interação de adicionar, alterar, excluir e marcar como feita as tarefas.
+
+### Funcionalidades
+
+Todos tipos de usuários
+- `Funcionalidade 1`: Realizar cadastro de usuários.
+- `Funcionalidade 2`: Autenticar usuários através do login.
+- `Funcionalidade 3`: Alterar dados dos usuários.
+- `Funcionalidade 4`: Efetuar logout.
+
+Usuários do tipo administrador
+- `Funcionalidade 5`: Excluir usuários cadastrados.
 
 
 ### Layout mobile
