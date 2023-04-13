@@ -46,6 +46,33 @@ Usuários do tipo administrador
   <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/begonia_web.png" alt="begonia web" style="width:49%;"/>
  </p>
 
+## Pré-requisitos
+
+Você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/);
+
+E um editor para trabalhar com o código, como: [VSCode](https://code.visualstudio.com/).
+
+```bash
+
+# Clone este repositório
+$ git clone <https://github.com/IsabelaBaseggio/ToDoList>
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd ToDoList
+
+# Vá para a pasta index
+$ cd index
+
+# Instale as dependências
+$ npm install nodemon
+
+# Execute a aplicação em modo de desenvolvimento
+$ nodemon index
+
+# O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
+
+```
 
 ## Técnicas e tecnologia utilizadas
 
