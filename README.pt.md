@@ -11,7 +11,7 @@
 
 https://login-nodejs-express-jwt-production.up.railway.app/
 
-To Do List é um software criado com o objetivo de praticar CRUD, como banco de dados relacional, estilização interativa e layout responsivo.
+To Do List é um software criado com o objetivo de praticar o padrão de projeto MVC, CRUD, persistência de dados no banco de dados relacional, estilização interativa e layout responsivo.
 
 O software consiste em uma lista de tarefas, com a interação de adicionar, alterar, excluir e marcar como feita as tarefas.
 
@@ -36,11 +36,21 @@ O software consiste em uma lista de tarefas, com a interação de adicionar, alt
  </p>
 
 
-## Tecnologia utilizadas
+## Técnicas e tecnologia utilizadas
+
+- Padrão MVC
 
 ### Front end
-- HTML / CSS
-- JavaScript
+- HTML5 / CSS3
+- JavaScript v8
+- Material Icons - Google Fonts
+
+### Back end
+- Node.js v16.16.0
+- Express v4.18.2
+- MongoDB v6.7.0
+- Dotenv v16.0.3
+- EJS v 3.1.8
 
 
 ## Autor
