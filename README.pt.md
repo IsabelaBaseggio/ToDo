@@ -58,17 +58,20 @@ E um editor para trabalhar com o código, como: [VSCode](https://code.visualstud
 # Clone este repositório
 $ git clone <https://github.com/IsabelaBaseggio/ToDoList>
 
+# No editor de text abra o arquivo index.js e altere a variável port para:
+const port = 3000;
+
 # Acesse a pasta do projeto no terminal/cmd
 $ cd ToDoList
 
 # Vá para a pasta index
-$ cd index
+$ cd serverTest
 
 # Instale as dependências
-$ npm install nodemon
+$ npm install ejs@3.1.8 express@4.18.2 mongoose@6.7.0 dotenv@16.0.3
 
 # Execute a aplicação em modo de desenvolvimento
-$ nodemon index
+$npm run dev:server
 
 # O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
 
