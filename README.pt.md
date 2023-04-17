@@ -26,20 +26,28 @@ Todos tipos de usuários
 ### Layout mobile
 
 <p float="left">
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/roses_mobile.png" alt="roses mobile"      style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/lily_mobile.png" alt="lily mobile"        style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/iris_mobile.png" alt="iris mobile" style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/begonia_mobile.png" alt="begonia mobile" style="width:24%;"/>
- <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/close_mobile.png" alt="menu mobile" style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/ToDoListMobile.png" alt="to do list home mobile"      style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/addTaskMobile.png" alt="add task mobile"        style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updateTaskMobile.png" alt="update task mobile" style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatingTaskMobile.png" alt="updating task mobile" style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatedTaskMobile.png" alt="task updated mobile"      style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/checkedTaskMobile.png" alt="task checked mobile"        style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/confirmDeleteTaskMobile.png" alt="confirming delete task mobile" style="width:24%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/taskDeletedMobile.png" alt="task deleted mobile" style="width:24%;"/>
+  
  </p>
 
 ### Layout web
 
 <p float="left">
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/roses_web.png" alt="roses web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/lily_web.png" alt="lily web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/iris_web.png" alt="iris web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/roses_and_more/blob/main/assets/begonia_web.png" alt="begonia web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/ToDoListWeb.png" alt="to do list home web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/addTaskWeb.png" alt="add task web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updateTaskWeb.png" alt="update task web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatingTaskWeb.png" alt="updating task web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatedTaskWeb.png" alt="task updated web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/checkedTaskWeb.png" alt="task checked web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/confirmDeleteTaskWeb.png" alt="confirming delete task web" style="width:49%;"/>
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/taskDeletedWeb.png" alt="task deleted web" style="width:49%;"/>
  </p>
 
 ## Pré-requisitos
@@ -54,7 +62,7 @@ E um editor para trabalhar com o código, como: [VSCode](https://code.visualstud
 # Clone este repositório
 $ git clone <https://github.com/IsabelaBaseggio/ToDoList>
 
-# No editor de text abra o arquivo index.js e altere a variável port para:
+# No editor de texto abra o arquivo index.js e altere a variável port para:
 const port = 3000;
 
 # Acesse a pasta do projeto no terminal/cmd
@@ -67,7 +75,7 @@ $ cd index
 $ npm install ejs@3.1.8 express@4.18.2 mongoose@6.7.0 dotenv@16.0.3
 
 # Execute a aplicação em modo de desenvolvimento
-$npm run dev:server
+$ npm run dev:server
 
 # O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
 
