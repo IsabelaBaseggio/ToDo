@@ -4,8 +4,7 @@
   "description": "ToDo list",
   "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "dev:server": "node serverTest/server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
