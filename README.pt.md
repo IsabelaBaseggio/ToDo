@@ -9,7 +9,7 @@
 
 ## Sobre o projeto
 
-https://login-nodejs-express-jwt-production.up.railway.app/
+https://web-production-0c88.up.railway.app/
 
 To Do List é um software criado com o objetivo de praticar o padrão de projeto MVC, CRUD, persistência de dados no banco de dados relacional, estilização interativa e layout responsivo.
 
@@ -18,14 +18,10 @@ O software consiste em uma lista de tarefas, com a interação de adicionar, alt
 ### Funcionalidades
 
 Todos tipos de usuários
-- `Funcionalidade 1`: Realizar cadastro de usuários.
-- `Funcionalidade 2`: Autenticar usuários através do login.
-- `Funcionalidade 3`: Alterar dados dos usuários.
-- `Funcionalidade 4`: Efetuar logout.
-
-Usuários do tipo administrador
-- `Funcionalidade 5`: Excluir usuários cadastrados.
-
+- `Funcionalidade 1`: Realizar cadastro de tarefas.
+- `Funcionalidade 2`: Atualiar tarefas cadastradas.
+- `Funcionalidade 3`: Alterar status das tarafas.
+- `Funcionalidade 4`: Excluir tarefas.
 
 ### Layout mobile
 
@@ -64,8 +60,8 @@ const port = 3000;
 # Acesse a pasta do projeto no terminal/cmd
 $ cd ToDoList
 
-# Vá para a pasta index
-$ cd serverTest
+# Vá para o arquivo index
+$ cd index
 
 # Instale as dependências
 $ npm install ejs@3.1.8 express@4.18.2 mongoose@6.7.0 dotenv@16.0.3
