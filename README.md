@@ -18,10 +18,10 @@ The software consists of a list of tasks, with interactions to add, change, dele
 
 ### Functionalities
 
-- `Funcionalidade 1`: Realizar cadastro de tarefas.
-- `Funcionalidade 2`: Atualiar tarefas cadastradas.
-- `Funcionalidade 3`: Alterar status das tarafas.
-- `Funcionalidade 4`: Excluir tarefas.
+- `Functionality 1`: Register tasks.
+- `Functionality 1`: Update registered tasks.
+- `Functionality 1`: Change tasks status.
+- `Functionality 1`: Delete tasks.
 
 ### Layout mobile
 
@@ -50,40 +50,40 @@ The software consists of a list of tasks, with interactions to add, change, dele
   <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/taskDeletedWeb.png" alt="task deleted web" style="width:49%;"/>
  </p>
 
-## Pré-requisitos
+## Prerequisites
 
-Você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+You will need to have the following tools installed on your machine
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/);
 
-E um editor para trabalhar com o código, como: [VSCode](https://code.visualstudio.com/).
+And an editor to work with the code, such as: [VSCode](https://code.visualstudio.com/).
 
 ```bash
 
-# Clone este repositório
+# Clone this repository
 $ git clone <https://github.com/IsabelaBaseggio/ToDoList>
 
-# No editor de texto abra o arquivo index.js e altere a variável port para:
+# In the text editor, open the index.js file and change the port variable to:
 const port = 3000;
 
-# Acesse a pasta do projeto no terminal/cmd
+# Access the project folder in the terminal/cmd
 $ cd ToDoList
 
-# Vá para o arquivo index
+# Go to the index file
 $ cd index
 
-# Instale as dependências
+# Install the dependencies
 $ npm install ejs@3.1.8 express@4.18.2 mongoose@6.7.0 dotenv@16.0.3
 
-# Execute a aplicação em modo de desenvolvimento
+# Run the application in development mode
 $ npm run dev:server
 
-# O servidor iniciará na porta: 3000 - acesse <http://localhost:3000>
+# The server will start on port: 3000 - access <http://localhost:3000>
 
 ```
 
-## Técnicas e tecnologia utilizadas
+## Techniques and technology used
 
-- Padrão MVC
+- MVC pattern
 
 ### Front end
 - HTML5 / CSS3
@@ -98,7 +98,7 @@ $ npm run dev:server
 - EJS v 3.1.8
 
 
-## Autor
+## Author
 
 Isabela Ribeiro Baseggio
 
