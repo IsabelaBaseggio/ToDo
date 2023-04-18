@@ -11,7 +11,6 @@
 
 https://web-production-0c88.up.railway.app/
 
-To Do List é um software criado com o objetivo de praticar o padrão de projeto MVC, CRUD, persistência de dados no banco de dados relacional, estilização interativa e layout responsivo.
 To Do List is a software created with the goal to practicing MVC pattern, CRUD, data persistence in a relational database, interactive styling and responsive layout.
 
 The software consists of a list of tasks, with interactions to add, change, delete and mark tasks as done.
