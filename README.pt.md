@@ -17,7 +17,6 @@ O software consiste em uma lista de tarefas, com a interação de adicionar, alt
 
 ### Funcionalidades
 
-Todos tipos de usuários
 - `Funcionalidade 1`: Realizar cadastro de tarefas.
 - `Funcionalidade 2`: Atualiar tarefas cadastradas.
 - `Funcionalidade 3`: Alterar status das tarafas.
