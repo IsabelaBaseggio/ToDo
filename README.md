@@ -1,23 +1,23 @@
 # To Do List
 
-[README(english)](https://github.com/IsabelaBaseggio/ToDoList/blob/main/README.md)
+[README(portuguese)](https://github.com/IsabelaBaseggio/ToDoList/blob/main/README.pt.md)
 
-#### Status: Finalizado
+#### Status: Done
 
 [![GitHub](https://img.shields.io/github/license/IsabelaBaseggio/ToDoList)](https://github.com/IsabelaBaseggio/ToDoList/blob/main/LICENSE)
 
 
-## Sobre o projeto
+## Project Description
 
 https://web-production-0c88.up.railway.app/
 
 To Do List é um software criado com o objetivo de praticar o padrão de projeto MVC, CRUD, persistência de dados no banco de dados relacional, estilização interativa e layout responsivo.
+To Do List is a software created with the goal to practicing MVC pattern, CRUD, data persistence in a relational database, interactive styling and responsive layout.
 
-O software consiste em uma lista de tarefas, com a interação de adicionar, alterar, excluir e marcar como feita as tarefas.
+The software consists of a list of tasks, with interactions to add, change, delete and mark tasks as done.
 
-### Funcionalidades
+### Functionalities
 
-Todos tipos de usuários
 - `Funcionalidade 1`: Realizar cadastro de tarefas.
 - `Funcionalidade 2`: Atualiar tarefas cadastradas.
 - `Funcionalidade 3`: Alterar status das tarafas.
