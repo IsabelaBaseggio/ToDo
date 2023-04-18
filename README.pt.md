@@ -1,6 +1,6 @@
 # To Do List
 
-[README(english)](https://github.com/IsabelaBaseggio/roses_and_more/blob/main/README.md)
+[README(english)](https://github.com/IsabelaBaseggio/ToDoList/blob/main/README.md)
 
 #### Status: Finalizado
 
