@@ -90,11 +90,11 @@ $ npm run dev:server
 - Material Icons - Google Fonts
 
 ### Back end
-- Node.js v16.16.0
+- Node.js v8.11.0
 - Express v4.18.2
 - MongoDB v6.7.0
 - Dotenv v16.0.3
-- EJS v 3.1.8
+- EJS v3.1.8
 
 
 ## Autor
