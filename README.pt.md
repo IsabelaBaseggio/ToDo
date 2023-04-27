@@ -25,28 +25,13 @@ O software consiste em uma lista de tarefas, com a interação de adicionar, alt
 ### Layout mobile
 
 <p float="left">
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/ToDoListMobile.png" alt="to do list home mobile"      style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/addTaskMobile.png" alt="add task mobile"        style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updateTaskMobile.png" alt="update task mobile" style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatingTaskMobile.png" alt="updating task mobile" style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatedTaskMobile.png" alt="task updated mobile"      style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/checkedTaskMobile.png" alt="task checked mobile"        style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/confirmDeleteTaskMobile.png" alt="confirming delete task mobile" style="width:24%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/taskDeletedMobile.png" alt="task deleted mobile" style="width:24%;"/>
-  
+  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/ToDoListMobile.png" alt="to do list home mobile"      style="width:24%;"/>  
  </p>
 
 ### Layout web
 
 <p float="left">
   <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/ToDoListWeb.png" alt="to do list home web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/addTaskWeb.png" alt="add task web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updateTaskWeb.png" alt="update task web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatingTaskWeb.png" alt="updating task web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/updatedTaskWeb.png" alt="task updated web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/checkedTaskWeb.png" alt="task checked web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/confirmDeleteTaskWeb.png" alt="confirming delete task web" style="width:49%;"/>
-  <img src="https://github.com/IsabelaBaseggio/ToDoList/blob/main/assets/taskDeletedWeb.png" alt="task deleted web" style="width:49%;"/>
  </p>
 
 ## Pré-requisitos
