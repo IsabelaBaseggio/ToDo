@@ -56,7 +56,7 @@ $ cd ToDoList
 $ cd index
 
 # Instale as dependências
-$ npm install ejs@3.1.8 express@4.18.2 mongoose@6.7.0 dotenv@16.0.3
+$ npm install
 
 # Execute a aplicação em modo de desenvolvimento
 $ npm run dev:server
