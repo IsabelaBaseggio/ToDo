@@ -9,7 +9,7 @@
 
 ## Sobre o projeto
 
-https://web-production-0c88.up.railway.app/
+https://todolist-irb.cyclic.app/
 
 To Do List é um software criado com o objetivo de praticar o padrão de projeto MVC, CRUD, persistência de dados no banco de dados relacional, estilização interativa e layout responsivo.
 
